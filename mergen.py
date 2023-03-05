@@ -19,8 +19,9 @@ for x in range(x_chunks):
         lower = (y + 1) * chunk_size
         
         # Paste the chunk into the output image
-        output_img.paste(chunk, (left, upper, right, lower))
+        output_img.paste(chunk, (left,upper,right,lower))
         
 # Save the output image
+#rotated_img = outplut_img.rotate(45)
 output_img.save('output/output_image.jpg')
 
